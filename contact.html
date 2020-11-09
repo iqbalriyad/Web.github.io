@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title> Prei Tour</title>	
+	<link rel="stylesheet" href="contact.css">
+</head>
+<body>
+<section id="banner">
+	<img src="logo.jpeg" class="logo">
+</section>
+
+<section id="contact">
+	<div class="container">
+		<h1>Contact</h1>
+		<div class="row">
+		<div class="col-md-6">
+		<form class="contact-form">
+		<div class="form-group">
+		<input type="text" class="form-control" placeholder="Your Name">
+		</div>
+		</form>
+		</div>
+		<div
+		</div>
+	</div>
+</section>
+
+
+
+
+<div id="sideNav">
+	<nav>
+	<ul>
+		<li class="active"><a href="index.html">HOME</a></li>
+		<li><a href="destination.html">DESTINATION</a></li>
+		<li><a href="price.html">PRICE</a></li>
+		<li><a href="contact.html">CONTACT</a></li>
+	</ul>
+	</nav>
+</div>
+<div id="menuBtn">
+	<img src="menu.png" id="menu">
+</div>
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+sideNav.style.right = "-250px";
+
+menuBtn.onclick = function(){
+	if(sideNav.style.right == "-250px"){
+		sideNav.style.right = "0";
+		menu.src = "close.png";
+	}
+	else{
+		sideNav.style.right = "-250px";
+		menu.src = "menu.png";
+	}
+} 
+</script>
+
+
+</body>
+</html>

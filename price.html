@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title> Prei Tour</title>	
+	<link rel="stylesheet" href="price.css">
+</head>
+<body>
+<section id="banner">
+	<img src="logo.jpeg" class="logo">
+	<div class="banner-text">
+		<h1>Price</h1>
+		<div class="popular">
+			<div class="col">
+			<div class="card card1">
+				<h5>Paket Hemat 1 hari</h5>
+				<p>Pulau Padar – Komodo – Pink</p>
+				<q>Rp. 650.000 / Orang</q>
+			</div>
+			<div class="card card2">
+				<h5>Paket Hemat 2 Hari 1 Malam</h5>
+				<p>Pulau Komodo</p>
+				<q>Rp. 1.150.000 /Orang </q>
+			</div>
+			<div class="card card3">
+				<h5>Paket Hemat 3 Hari 2 Malam</h5>
+				<p>Pulau Komodo</p>
+				<q>Rp. 2.000.000 /Orang</q>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div id="sideNav">
+	<nav>
+	<ul>
+		<li class="active"><a href="index.html">HOME</a></li>
+		<li><a href="destination.html">DESTINATION</a></li>
+		<li><a href="price.html">PRICE</a></li>
+		<li><a href="contact.html">CONTACT</a></li>
+	</ul>
+	</nav>
+</div>
+<div id="menuBtn">
+	<img src="menu.png" id="menu">
+</div>
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+sideNav.style.right = "-250px";
+
+menuBtn.onclick = function(){
+	if(sideNav.style.right == "-250px"){
+		sideNav.style.right = "0";
+		menu.src = "close.png";
+	}
+	else{
+		sideNav.style.right = "-250px";
+		menu.src = "menu.png";
+	}
+} 
+</script>
+
+
+</body>
+</html>

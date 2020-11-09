@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title> Prei Tour</title>	
+	<link rel="stylesheet" href="destination.css">
+</head>
+<body>
+<section id="banner">
+	<img src="logo.jpeg" class="logo">
+	<div class="main">
+		<div class="popular">
+			<h1>Destination</h1>
+			<div class="new-news">
+				<div class="berita">
+					<img src="komodo.jpg">
+					<div class="news-text">
+						<h2>Pulau Komodo</h2>
+						<p>Lorem ipsum dolor sit amet, consecteur adipsicing elit. Pariatur ab quas facilis obnacemial non ea, est odit repeliat distincto incident, quila allquam eveniet quod dellenti impedit sapiente alque tennetur porro?</p>
+					</div>
+				</div>
+				<div class="berita">
+					<img src="pink.jpg">
+					<div class="news-text">
+						<h2>Pink Beach</h2>
+						<p>Lorem ipsum dolor sit amet, consecteur adipsicing elit. Pariatur ab quas facilis obnacemial non ea, est odit repeliat distincto incident, quila allquam eveniet quod dellenti impedit sapiente alque tennetur porro?</p>
+					</div>
+				</div>
+				<div class="berita">
+					<img src="padar.jpg">
+					<div class="news-text">
+						<h2>Pulau Padar</h2>
+						<p>Lorem ipsum dolor sit amet, consecteur adipsicing elit. Pariatur ab quas facilis obnacemial non ea, est odit repeliat distincto incident, quila allquam eveniet quod dellenti impedit sapiente alque tennetur porro?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+
+<div id="sideNav">
+	<nav>
+	<ul>
+		<li class="active"><a href="index.html">HOME</a></li>
+		<li><a href="destination.html">DESTINATION</a></li>
+		<li><a href="price.html">PRICE</a></li>
+		<li><a href="contact.html">CONTACT</a></li>
+	</ul>
+	</nav>
+</div>
+<div id="menuBtn">
+	<img src="menu.png" id="menu">
+</div>
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+sideNav.style.right = "-250px";
+
+menuBtn.onclick = function(){
+	if(sideNav.style.right == "-250px"){
+		sideNav.style.right = "0";
+		menu.src = "close.png";
+	}
+	else{
+		sideNav.style.right = "-250px";
+		menu.src = "menu.png";
+	}
+} 
+</script>
+
+
+</body>
+</html>
