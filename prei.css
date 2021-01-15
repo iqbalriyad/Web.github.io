@@ -94,3 +94,25 @@ nav ul li a{
 	width: 20px;
 	margin-top: 15px;
 }
+
+@media only screen and (max-width: 600px) { 
+
+	.banner-text {
+		padding-top: 120pt;
+	}
+
+	.banner-text h1{
+		font-size: 80pt;
+	}
+
+	.banner-text p {
+		margin-top: 20px;
+	}
+
+	#sideNav {
+		width: 200px;
+	}
+}
+
+
+

@@ -27,8 +27,9 @@
 	color: white;
 	font-size: 18px;
 	padding: 20px;
-	border-radius: 10px;
 	text-align: justify;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 .popular h1{
 	text-align: center;
@@ -74,4 +75,28 @@ nav ul li a{
 #menuBtn img{
 	width: 20px;
 	margin-top: 15px;
+}
+@media only screen and (max-width: 800px) {
+	.banner-text {
+		padding-top: 150pt;
+	}
+
+	.banner-text h1{
+		font-size: 40pt;
+	}
+
+	.banner-text p {
+		margin-top: 20px;
+	}
+	.popular{
+		flex: auto;
+	}
+	#sideNav {
+		width: 200px;
+	}
+	.popular {
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
 }

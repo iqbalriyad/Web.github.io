@@ -21,7 +21,6 @@
 }
 .banner-text h1{
 	font-size: 70px;
-	margin-top: : 150px;
 }
 .main-mid{
 	background-color: #d7d9de;
@@ -103,4 +102,35 @@ nav ul li a{
 #menuBtn img{
 	width: 20px;
 	margin-top: 15px;
+}
+
+@media only screen and (max-width: 600px) { 
+	#text-title {
+		font-size: 35pt;
+	}
+
+	.banner-text {
+		padding-top: 80pt;
+	}
+
+	.card1 {
+		margin-top: 60px;
+	}
+
+	.card {
+		margin-top: 50pt;
+	}
+
+	#sideNav {
+		width: 200px;
+	}
+
+	#banner {
+		height: 200%;
+	}
+}
+@media only screen and (max-width: 800px) {
+	#banner{
+		height: 150%;
+	}
 }
